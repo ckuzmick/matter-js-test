@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 import { useEffect, useRef } from 'react';
-const Matter = require('matter-js')
+const Matter = require('matter-js');
 
 export default function Home() {
   useEffect(() => {
@@ -26,6 +26,7 @@ export default function Home() {
     var boxA = Bodies.rectangle(400, 200, 80, 80);
     var boxB = Bodies.rectangle(450, 50, 80, 80);
     var ground = Bodies.rectangle(400, 610, 810, 60, { isStatic: true });
+    var bar = Bodies.rectangle(200, 100, 80, 200)
 
     // add all of the bodies to the world
     Composite.add(engine.world, [boxA, boxB, ground]);
