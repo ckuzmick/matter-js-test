@@ -29,7 +29,7 @@ export default function Home() {
     var bar = Bodies.rectangle(200, 100, 80, 200)
 
     // add all of the bodies to the world
-    Composite.add(engine.world, [boxA, boxB, ground]);
+    Composite.add(engine.world, [boxA, boxB, ground, bar]);
 
     // run the renderer
     Render.run(render);
